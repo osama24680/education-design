@@ -12,10 +12,10 @@
 </head>
 
 <body>
-    <header>
-        <div class="overlay">
+    <header class="position-relative">
+        <div class="overlay position-absolute top-0 start-0 bottom-0 end-0 bg-overlay">
             <div class="container">
-                <nav class="navbar navbar-expand-lg bg-tranparent">
+                <nav class="navbar navbar-expand-lg  bg-sm-danger">
                     <div class="container-fluid">
                         <a class="navbar-brand text-white fw-bold fs-3" href="#">Tutor</a>
                         <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -42,13 +42,24 @@
                                     <a class="nav-link text-white" href="#">About</a>
                                 </li>
                                 <li class="nav-item me-3">
-                                    <a class="nav-link text-white" href="#">Contact  </a>
+                                    <a class="nav-link text-white" href="#">Contact </a>
                                 </li>
                             </ul>
-                            
+
                         </div>
                     </div>
                 </nav>
+                <div class="header_content position-absolute top-50 start-50 translate-middle align-center ">
+                    <div class="w-100">
+                        <h1 class="text-white fs-5">The <strong>Hub</strong> of <strong>Tutorials</strong></h1>
+                        <div class="d-flex justify-content-center mt-3">
+                            <button class="btn btn-primary me-3">Learn More</button>
+                            <button class="btn btn-outline-primary ms-3 text-white">See Courses</button>
+                        </div>
+                    </div>
+                  
+
+                </div>
             </div>
         </div>
 
@@ -61,7 +72,7 @@
 
     <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/all.min.js"></script>
-   
+
 </body>
 
 </html>

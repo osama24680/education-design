@@ -4,16 +4,15 @@
     --black: #000;
 
 }
-
+.fs-5{
+    font-size: 3.2rem !important;
+}
+.bg-overlay{
+    
+    background-color: rgba(0, 0, 0, 0.336);
+}
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    list-style: none;
-    text-decoration: none;
-    outline: 0;
-    border: 0;
     transition: 0.4s;
 }
 
@@ -23,27 +22,9 @@ html {
 }
 
 body {
-
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
-
-
 }
-
-img {
-    display: block;
-    width: 100%;
-    object-fit: cover;
-}
-
-ul {
-    list-style-type: none;
-}
-
-a {
-    text-decoration: none;
-}
-
 header{
     width: 100%;
     height: 90vh;
@@ -52,16 +33,30 @@ header{
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    position: relative;
 }
-header .overlay{
-    position: absolute;
-    left:0;
-    bottom: 0;
-    top:0;
-    right:0;
-    background-color: rgba(0, 0, 0, 0.336);
+header nav{
+    z-index: 5;
 }
 header .overlay nav .navbar-collapse ul .nav-item:hover{
     font-weight: 700;
+}
+@media(max-width:992px){
+    .fs-5{
+        font-size: 2.3rem !important;
+    }
+  
+}
+@media(max-width:768px){
+    .fs-5{
+        font-size: 1.8rem !important;
+    }
+}
+@media(max-width:576px){
+    .fs-5{
+        font-size: 1rem !important;
+    }
+    button{
+        font-size: .4rem !important;
+        padding: 5px 8px !important;
+    }
 }
