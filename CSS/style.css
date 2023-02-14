@@ -7,6 +7,9 @@
 .fs-5{
     font-size: 3.2rem !important;
 }
+.w_100{
+    width: 100%;
+}
 .bg-overlay{
     
     background-color: rgba(0, 0, 0, 0.336);
@@ -25,6 +28,9 @@ body {
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
 }
+a{
+    text-decoration: none;
+}
 header{
     width: 100%;
     height: 90vh;
@@ -40,6 +46,62 @@ header nav{
 header .overlay nav .navbar-collapse ul .nav-item:hover{
     font-weight: 700;
 }
+/* ************************************************* Section of Courses ***************************************************** */
+.card{
+    border:none !important;
+    border-radius: 0;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 1rem;
+    padding-right: 0 !important;
+}
+.card-body{
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    padding-right: 0 !important;
+}
+.card-body .icons img{
+    width: 20px
+}
+.sideElements{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    height: 100%;
+}
+.sideElements img{
+    width: 70px;
+}
+/* ************************************************* Courses ***************************************************** */
+.Courses p{
+    letter-spacing: 1px;
+}
+
+.Courses .items .item {
+    background-color: #f8f9fa;
+    width: 12%;
+    cursor: pointer;
+}
+.Courses .items .item:hover{
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+}
+.Courses .items .item:hover p{
+    color:#000
+
+}
+.Courses .items .item div {
+    width: 60px;
+    height: 60px;
+    
+}
+.Courses .items .item div img{
+    width: 100%;
+}
+.Courses .items .item p{
+    color:#ccc
+}
+
+/* ************************************************* media query ***************************************************** */
+
 @media(max-width:992px){
     .fs-5{
         font-size: 2.3rem !important;
@@ -48,11 +110,19 @@ header .overlay nav .navbar-collapse ul .nav-item:hover{
         background-color: rgba(0, 0, 0, 0.656);
         padding-left: 20px;
     }
+    .Courses .items .item {
+        width: 27%;
+        margin-top: 20px;
+    }
   
 }
 @media(max-width:768px){
     .fs-5{
         font-size: 1.8rem !important;
+    }
+    .Courses .items .item {
+        width: 40%;
+
     }
 }
 @media(max-width:576px){
@@ -61,7 +131,7 @@ header .overlay nav .navbar-collapse ul .nav-item:hover{
     }
     button{
         font-size: .5rem !important;
-        /* padding: 5px 8px !important; */
+        padding: 5px 8px !important;
         width: 100% !important;
     }
     header{
