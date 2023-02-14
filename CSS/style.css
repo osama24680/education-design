@@ -44,6 +44,10 @@ header .overlay nav .navbar-collapse ul .nav-item:hover{
     .fs-5{
         font-size: 2.3rem !important;
     }
+    header .overlay nav .navbar-collapse ul {
+        background-color: rgba(0, 0, 0, 0.656);
+        padding-left: 20px;
+    }
   
 }
 @media(max-width:768px){
@@ -53,10 +57,14 @@ header .overlay nav .navbar-collapse ul .nav-item:hover{
 }
 @media(max-width:576px){
     .fs-5{
-        font-size: 1rem !important;
+        font-size: 1.2rem !important;
     }
     button{
         font-size: .4rem !important;
         padding: 5px 8px !important;
     }
+    header{
+        height: 50vh;
+    }
+   
 }
