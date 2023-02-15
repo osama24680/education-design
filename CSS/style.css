@@ -1,17 +1,21 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,300;1,500&display=swap');
+
 :root {
     --white: ##C270FF;
     --black: #000;
 
 }
-.fs-5{
+
+.fs-5 {
     font-size: 3.2rem !important;
 }
-.w_100{
+
+.w_100 {
     width: 100%;
 }
-.bg-overlay{
-    
+
+.bg-overlay {
+
     background-color: rgba(0, 0, 0, 0.336);
 }
 
@@ -28,10 +32,12 @@ body {
     overflow: hidden;
     font-family: 'Raleway', sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
 }
-header{
+
+header {
     width: 100%;
     height: 90vh;
     background-image: url("../images/hero_bg.jpg");
@@ -40,37 +46,45 @@ header{
     background-size: cover;
     background-attachment: fixed;
 }
-header nav{
+
+header nav {
     z-index: 5;
 }
-header .overlay nav .navbar-collapse ul .nav-item:hover{
+
+header .overlay nav .navbar-collapse ul .nav-item:hover {
     font-weight: 700;
 }
+
 /* ************************************************* Section of Courses ***************************************************** */
-.card{
-    border:none !important;
+.card {
+    border: none !important;
     border-radius: 0;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     padding: 1rem;
     padding-right: 0 !important;
 }
-.card-body{
+
+.card-body {
     padding-top: 0 !important;
     padding-bottom: 0 !important;
     padding-right: 0 !important;
 }
-.card-body .icons img{
+
+.card-body .icons img {
     width: 20px
 }
-.sideElements{
+
+.sideElements {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     height: 100%;
 }
-.sideElements img{
+
+.sideElements img {
     width: 70px;
 }
+
 /* ************************************************* Courses ***************************************************** */
-.Courses p{
+.Courses p {
     letter-spacing: 1px;
 }
 
@@ -79,63 +93,430 @@ header .overlay nav .navbar-collapse ul .nav-item:hover{
     width: 12%;
     cursor: pointer;
 }
-.Courses .items .item:hover{
+
+.Courses .items .item:hover {
     background-color: #fff;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
 
 }
-.Courses .items .item:hover p{
-    color:#000
 
+.Courses .items .item:hover p {
+    color: #000
 }
+
 .Courses .items .item div {
     width: 60px;
     height: 60px;
-    
+
 }
-.Courses .items .item div img{
+
+.Courses .items .item div img {
     width: 100%;
 }
-.Courses .items .item p{
-    color:#ccc
+
+.Courses .items .item p {
+    color: #ccc
 }
 
-/* ************************************************* media query ***************************************************** */
+/* ************************************************* SearchBar ***************************************************** */
+.SearchBar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 100px;
+}
 
-@media(max-width:992px){
-    .fs-5{
+.SearchBar .search {
+    position: relative;
+    width: 45%;
+}
+
+.SearchBar .search input {
+    background-color: #efefef;
+    padding: 15px;
+}
+
+.SearchBar .search button {
+    position: absolute;
+    right: -100px;
+    top: 0;
+    padding: 15px 20px;
+}
+
+.SearchBar .share {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20%;
+}
+
+.SearchBar .share p {
+    margin-bottom: 0;
+}
+
+.SearchBar .share .icons div {
+    width: 40px;
+    height: 40px;
+    background-color: #f8f9fa;
+}
+
+.SearchBar .share .icons div svg {
+    color: #248bed;
+    cursor: pointer;
+}
+
+.SearchBar .share .icons div:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+}
+
+
+/* ************************************************* detailsCourses ***************************************************** */
+.detailsCourses_content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+    margin-top: 100px;
+}
+
+.detailsCourses_content .leftSide {
+    width: 55%;
+}
+
+.detailsCourses_content .rightSide {
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+
+.detailsCourses_content .rightSide .item {
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-bottom: 20px;
+    width: 80%;
+}
+
+.detailsCourses_content .rightSide .item .imgDiv {
+    width: 70%;
+}
+
+.detailsCourses_content .rightSide .item .imgDiv img {
+    width: 100%;
+    padding: 0 !important;
+}
+
+.detailsCourses_content .rightSide .item p {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+.pagination li a {
+    padding: 15px 25px !important;
+}
+
+/* ************************************************* reviewsDetails ***************************************************** */
+.reviewsDetails {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.reviewsDetails .itemReview {
+    width: 30%;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    border-radius: 10px;
+    border-bottom: #248bed 4px solid;
+}
+
+.reviewsDetails .itemReview h3 {
+    font-weight: 300;
+    color: #364d59;
+
+}
+
+.reviewsDetails .itemReview p {
+    line-height: 30px;
+    margin-top: 5px;
+    margin-bottom: 1rem;
+}
+
+.reviewsDetails .itemReview .data {
+    display: flex;
+}
+
+.reviewsDetails .itemReview .data img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+.reviewsDetails .itemReview .data div p {
+    margin: 0;
+}
+
+.reviewsDetails .itemReview .data div p:last-child {
+    color: #ccc;
+}
+
+/* ************************************************* register ***************************************************** */
+.register {
+    width: 100%;
+    height: 70vh;
+    background-image: url("../images/bg_2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: #3c8edaad;
+}
+.registerContent{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+}
+.registerContent .leftSide{
+    width: 45%;
+}
+
+.registerContent .leftSide .timer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-top: 60px;
+}
+.registerContent .leftSide .timer div{
+    width: 110px;
+    height: 110px;
+    background-color: #007aff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+}
+.registerContent .leftSide .timer div p{
+    width: 110px;
+    height: 110px;
+    background-color: #007aff;
+    padding: 20px;
+    color:#fff;
+    font-size: 25px;
+}
+.registerContent .leftSide{
+    width: 55%;
+}
+.registerContent .rightSide{
+    width: 40%;
+}
+.registerContent .rightSide .form input{
+    margin-bottom: 20px;
+    outline: none;
+    padding: 8px 12px;
+    border:none;
+    border-bottom:3px solid blue;
+    border-radius: 7px;
+    color:#ccc;
+}
+::placeholder{
+    color:#ccc;
+}
+/* ************************************************* why ***************************************************** */
+.why{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.why .reviewsDetails .itemReview .mainImageReview{
+    width: 100%;
+    border-radius: 10px;
+}
+/* ************************************************* footer ***************************************************** */
+footer{
+    background-color: #b3c1ce;
+    width: 100%;
+    padding: 15px;
+    text-align: center;
+}
+footer p{
+    margin: 0;
+    
+}
+/* ************************************************* media query ***************************************************** */
+@media (max-width:1200px){
+    .registerContent .leftSide .timer div p{
+        width: 0px;
+        height: 0px;
+        background-color: none;
+        padding: 0px;
+        color:#fff;
+        font-size: 25px;
+    }
+}
+@media(max-width:992px) {
+    .fs-5 {
         font-size: 2.3rem !important;
     }
+
     header .overlay nav .navbar-collapse ul {
         background-color: rgba(0, 0, 0, 0.656);
         padding-left: 20px;
     }
+
     .Courses .items .item {
         width: 27%;
         margin-top: 20px;
     }
-  
+
+    .SearchBar {
+        flex-direction: column;
+        margin-top: 70px;
+        padding: 0;
+    }
+
+    .SearchBar .search {
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .SearchBar .search button {
+        right: 0px;
+    }
+
+    .SearchBar .share {
+        margin-top: 30px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .reviewsDetails .itemReview {
+        width: 45%;
+        margin-bottom: 20px;
+    }
+
+    .registerContent{
+        justify-content: center;
+        align-items:center;
+        flex-direction: column;
+        width: 100%;
+    }
+    .registerContent .leftSide{
+        width: 100%;
+    }
+    
+ 
+    .registerContent .leftSide .timer div p{
+        width: 110px;
+        height: 110px;
+        background-color: #007aff;
+        padding: 20px;
+        color:#fff;
+        font-size: 25px;
+    }
+
+    .registerContent .rightSide{
+        width: 100%;
+        margin-top: 30px;
+    }
+
+
 }
-@media(max-width:768px){
-    .fs-5{
+
+@media(max-width:768px) {
+    .fs-5 {
         font-size: 1.8rem !important;
     }
+
     .Courses .items .item {
         width: 40%;
 
     }
+
+    .detailsCourses_content {
+        flex-direction: column;
+    }
+
+    .detailsCourses_content .leftSide {
+        width: 100%;
+    }
+
+    .detailsCourses_content .leftSide .card {
+        padding: 0 !important;
+    }
+
+    .detailsCourses_content .leftSide .card-body {
+        padding: 20px 15px !important;
+    }
+
+    .detailsCourses_content .rightSide {
+        margin-top: 20px;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .pagination {
+        align-items: center;
+        justify-content: center;
+    }
+
+    .pagination li a {
+        padding: 10px 15px !important;
+    }
+
 }
-@media(max-width:576px){
-    .fs-5{
+
+@media(max-width:576px) {
+    .fs-5 {
         font-size: 1.2rem !important;
     }
-    button{
+
+    header button {
         font-size: .5rem !important;
         padding: 5px 8px !important;
         width: 100% !important;
     }
-    header{
+
+    header {
         height: 40vh;
     }
-   
+
+    .reviewsDetails {
+        justify-content: center;
+    }
+
+    .reviewsDetails .itemReview {
+        width: 85%;
+        margin-bottom: 20px auto;
+    }
+    .registerContent .leftSide .timer div{
+        width: 70px;
+        height: 70px;
+        padding: 10px;
+    }
+    .registerContent .leftSide .timer div p{
+        width: 0px;
+        height: 0px;
+        background-color: none;
+        padding: 0px;
+        color:#fff;
+        font-size: 17px;
+    }
 }
