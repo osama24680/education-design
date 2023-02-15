@@ -480,6 +480,9 @@ footer p{
     .pagination li a {
         padding: 10px 15px !important;
     }
+    .register{
+        height: 80vh;
+    }
 
 }
 
