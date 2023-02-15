@@ -519,4 +519,7 @@ footer p{
         color:#fff;
         font-size: 17px;
     }
+    .register{
+        height: 100vh;
+    }
 }
