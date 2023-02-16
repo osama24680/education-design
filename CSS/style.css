@@ -69,7 +69,6 @@ header .overlay_hero .navbar {
     z-index: 40;
 }
 .navbar-toggler{
-    background-color: red;
     z-index: 50;
     position: relative;
     margin-left: 80px;
