@@ -14,8 +14,30 @@
 <body>
     <!-- ************************************************Header************************************************ -->
     <header class="position-relative">
-        <div class="overlay position-absolute top-0 start-0 bottom-0 end-0 bg-overlay">
-            
+
+        <div id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./images/hero_bg2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/hero_bg.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./images/hero_bg3.jpg" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+
+        <div class="overlay_hero position-absolute top-0 start-0 bottom-0 end-0 bg-overlay">
             <div class="container">
                 <nav class="navbar navbar-expand-lg  bg-sm-danger">
                     <div class="container-fluid">
@@ -55,14 +77,13 @@
                     <div class="w-100 h-100 ">
                         <h1 class="text-white fs-5">The <strong>Hub</strong> of <strong>Tutorials</strong></h1>
                         <div class="d-flex justify-content-center mt-3">
-                            <button class="btn btn-primary me-3">Learn More</button>
-                            <button class="btn btn-outline-primary ms-3 text-white">See Courses</button>
+                            <button class="btn btn-primary me-3 myButton">Learn More</button>
+                            <button class="btn btn-outline-primary ms-3 text-white myButton">See Courses</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </header>
     <!-- ************************************************Cards************************************************ -->
     <section>
@@ -99,7 +120,7 @@
 
                 <div class="col-lg-4 col-sm-12  sideElements py-4">
                     <div class="d-flex flex-column bg-white">
-                        <div class="g-0 d-flex justify-content-between align-items-center ">
+                        <div class="g-0 d-flex justify-content-start align-items-center ">
                             <div class="col-md-2 ">
                                 <img src="./images/img_1.jpg" class="" alt="...">
                             </div>
@@ -111,7 +132,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="g-0 d-flex justify-content-between align-items-center my-3">
+                        <div class="g-0 d-flex justify-content-start align-items-center my-3">
                             <div class="col-md-2">
                                 <img src="./images/img_1.jpg" class="" alt="...">
                             </div>
@@ -123,7 +144,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="g-0 d-flex justify-content-between align-items-center ">
+                        <div class="g-0 d-flex justify-content-start align-items-center ">
                             <div class="col-md-2">
                                 <img src="./images/img_1.jpg" class="" alt="...">
                             </div>
@@ -185,7 +206,6 @@
 
         </div>
     </div>
-
     <!-- ************************************************SearchBar************************************************ -->
     <div class="SearchBar container ">
         <form class="search">
@@ -318,23 +338,112 @@
             </div>
 
             <div class="rightSide">
-                <div class="item">
-                    <div class="imgDiv">
-                        <img src="./images/img_1.jpg" alt="" />
+                <div class="accordion" id="accordionExample">
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingOne">
+                            <button class="accordion-button " type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                JavaScript
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong> Web language: </strong> JavaScript, often abbreviated
+                                as JS, is a programming language that is one of the core technologies of the World Wide
+                                Web, alongside HTML and CSS. As of 2022, 98% of websites use JavaScript on the client
+                                side for webpage behavior, often incorporating third-party libraries
+                                <a target="_blank" href="https://www.javascript.com">more...</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>Learn React Native</p>
-                </div>
-                <div class="item">
-                    <div class="imgDiv">
-                        <img src="./images/img_2.jpg" alt="" />
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                React.JS
+                            </button>
+                        </h2>
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> React is a free
+                                and open-source front-end JavaScript library for building user interfaces
+                                based on components. It is maintained by Meta and a community of individual
+                                developers and companies.
+                                <a href="https://reactjs.org">more...</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>Learn JavaScript</p>
-                </div>
-                <div class="item">
-                    <div class="imgDiv">
-                        <img src="./images/img_3.jpg" alt="" />
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Node.JS
+                            </button>
+                        </h2>
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Node.js is a cross-platform,
+                                open-source server environment that can run on Windows, Linux, Unix, macOS, and more.
+                                Node.js is a back-end JavaScript runtime environment, runs on the V8 JavaScript Engine,
+                                and executes JavaScript code outside a web browser.
+                                <a href="https://nodejs.org/en/">more...</a>
+                            </div>
+                        </div>
                     </div>
-                    <p>Learn Node.JS</p>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFour">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                Express.JS
+                            </button>
+                        </h2>
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                Express.js, or simply Express, is a back end web application framework for building
+                                RESTful
+                                APIs with Node.js, released as free and open-source software under the MIT License. It
+                                is
+                                designed for building web applications and APIs. It has been called the de facto
+                                standard
+                                server framework for Node.js.
+                                <a href="https://expressjs.com">more...</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingFive">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                MongoDB
+                            </button>
+                        </h2>
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                            data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                MongoDB is a source-available cross-platform document-oriented database program.
+                                Classified as a NoSQL database program, MongoDB uses JSON-like documents with
+                                optional schemas. MongoDB is developed by MongoDB Inc. and licensed under the
+                                Server Side Public License which is deemed non-free by several distributions
+                                <a href="https://www.mongodb.com/cloud/atlas/lp/try4?utm_content=controlhterms&utm_
+                                    source=google&utm_campaign=search_gs_pl_evergreen_atlas_core_prosp-brand_gic-null_
+                                    emea-eg_ps-all_desktop_eng_lead&utm_term=mongodb&utm_medium=cpc_paid_search&utm_
+                                    ad=e&utm_ad_campaign_id=12212624392&adgroup=115749716783&cq_cmp=12212624392&gclid
+                                    =Cj0KCQiAxbefBhDfARIsAL4XLRqz4HwHz2CMdpa3IngvRBqb1sqzE2lRoqDwn42Gg4WiEH0uiLTbOEYaAp
+                                    YgEALw_wcB">
+                                    more...
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -456,10 +565,10 @@
         </div>
         <div class="reviewsDetails mt-3">
             <div class="itemReview  p-4 bg-white">
-                <img src="./images/image_1.jpg" class="mainImageReview"/>
+                <img src="./images/image_1.jpg" class="mainImageReview" />
                 <div class="calender pt-2 text-primary">
                     <small class="">
-                        <i class="fa-solid fa-calendar-days"></i> FEB.15,2023 admin chat               
+                        <i class="fa-solid fa-calendar-days"></i> FEB.15,2023 admin chat
                     </small>
                 </div>
                 <h3 class="mt-3">Excellent Teacher!</h3>
@@ -473,14 +582,14 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"
                 </p>
-                
+
             </div>
 
             <div class="itemReview  p-4 bg-white">
-                <img src="./images/image_2.jpg" class="mainImageReview"/>
+                <img src="./images/image_2.jpg" class="mainImageReview" />
                 <div class="calender pt-2 text-primary">
                     <small class="">
-                        <i class="fa-solid fa-calendar-days"></i> FEB.15,2023 admin chat               
+                        <i class="fa-solid fa-calendar-days"></i> FEB.15,2023 admin chat
                     </small>
                 </div>
                 <h3 class="mt-3">Best Video Tutorial!!</h3>
@@ -494,14 +603,14 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"
                 </p>
-               
+
             </div>
 
             <div class="itemReview  p-4 bg-white">
-                <img src="./images/image_3.jpg" class="mainImageReview"/>
+                <img src="./images/image_3.jpg" class="mainImageReview" />
                 <div class="calender pt-2 text-primary">
                     <small class="">
-                        <i class="fa-solid fa-calendar-days"></i> FEB.15,2023 admin chat               
+                        <i class="fa-solid fa-calendar-days"></i> FEB.15,2023 admin chat
                     </small>
                 </div>
                 <h3 class="mt-3">Easy to Understand!!</h3>
@@ -515,7 +624,7 @@
                 <p>"Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Voluptatem, deserunt eveniet veniam. Ipsam, nam, voluptatum"
                 </p>
-                
+
             </div>
         </div>
     </div>
@@ -527,6 +636,9 @@
 
         </div>
     </footer>
+
+
+
     <script src="./JS/bootstrap.bundle.min.js"></script>
     <script src="./JS/all.min.js"></script>
 

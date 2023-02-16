@@ -37,21 +37,46 @@ a {
     text-decoration: none;
 }
 
-header {
-    width: 100%;
-    height: 90vh;
-    background-image: url("../images/hero_bg.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-}
 
-header nav {
+.overlay_hero{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom: 0;
+    background-color: #0000005a;
     z-index: 5;
 }
+.carousel-control-prev,.carousel-control-next{
+    z-index: 10;
+}
+.carousel {
+    width: 100% !important;
+    height: 100vh !important;
+}
+.carousel  .carousel-inner {
+    width: 100% !important;
+    height: 100% !important;
+}
 
-header .overlay nav .navbar-collapse ul .nav-item:hover {
+.carousel  .carousel-inner .carousel-item img{
+    width: 100% !important;
+    height: 100% !important;
+}
+
+
+header .overlay_hero .navbar {
+    z-index: 40;
+}
+.navbar-toggler{
+    background-color: red;
+    z-index: 50;
+    position: relative;
+    margin-left: 80px;
+    transform: translateX(-30px);
+}
+
+header .overlay_hero nav .navbar-collapse ul .nav-item:hover {
     font-weight: 700;
 }
 
@@ -374,9 +399,12 @@ footer p{
         font-size: 2.3rem !important;
     }
 
-    header .overlay nav .navbar-collapse ul {
+    header .overlay_hero nav .navbar-collapse ul {
         background-color: rgba(0, 0, 0, 0.656);
         padding-left: 20px;
+    }
+    .carousel {
+        height: 80vh !important;
     }
 
     .Courses .items .item {
@@ -448,6 +476,9 @@ footer p{
         width: 40%;
 
     }
+    .carousel {
+        height: 60vh !important;
+    }
 
     .detailsCourses_content {
         flex-direction: column;
@@ -491,14 +522,14 @@ footer p{
         font-size: 1.2rem !important;
     }
 
-    header button {
+    header .myButton {
         font-size: .5rem !important;
         padding: 5px 8px !important;
         width: 100% !important;
     }
 
-    header {
-        height: 40vh;
+    .carousel {
+        height: 40vh !important;
     }
 
     .reviewsDetails {
