@@ -399,7 +399,6 @@ footer p{
 
     header .overlay_hero nav .navbar-collapse ul {
         background-color: rgba(0, 0, 0, 0.53);
-        padding-left: 20px;
      
     }
     .carousel {
@@ -528,7 +527,7 @@ footer p{
     }
 
     .carousel {
-        height: 40vh !important;
+        height: 50vh !important;
     }
     .carousel-control-prev,.carousel-control-next{
         z-index: 10;
