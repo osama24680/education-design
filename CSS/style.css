@@ -38,37 +38,64 @@ a {
 }
 
 
-.overlay_hero{
+.overlay_hero {
     position: absolute;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
     background-color: #0000005a;
     z-index: 5;
 }
-.carousel-control-prev,.carousel-control-next{
+
+.carousel-control-prev,
+.carousel-control-next {
     z-index: 10;
 }
+
 .carousel {
     width: 100% !important;
     height: 100vh !important;
 }
-.carousel  .carousel-inner {
+
+.carousel .carousel-inner {
     width: 100% !important;
     height: 100% !important;
 }
 
-.carousel  .carousel-inner .carousel-item img{
+.carousel .carousel-inner .carousel-item img {
     width: 100% !important;
     height: 100% !important;
 }
 
+.carousel-inner .carousel-item {
+    position: relative;
+}
+
+.carousel .carousel-inner .carouselContent {
+    position: absolute !important;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 55%;
+    z-index: 500 !important;
+    background-color: rgba(128, 128, 128, 0.568);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+
+.carousel .carousel-inner .carouselContent p {
+    margin: 0;
+    color: #fff;
+    font-weight: bold;
+    margin-top: 20px;
+}
 
 header .overlay_hero .navbar {
     z-index: 40;
 }
-.navbar-toggler{
+
+.navbar-toggler {
 
     margin-left: 80px;
     transform: translateX(-30px);
@@ -139,6 +166,26 @@ header .overlay_hero nav .navbar-collapse ul .nav-item:hover {
 
 .Courses .items .item p {
     color: #ccc
+}
+
+/* ************************************************* Difference ***************************************************** */
+.Difference {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: wrap;
+}
+
+.Difference .item {
+    width: 30%;
+    background: rgba(224, 234, 238, 0.13);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    backdrop-filter: blur(7.5px);
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    padding: 20px;
+
 }
 
 /* ************************************************* SearchBar ***************************************************** */
@@ -301,97 +348,138 @@ header .overlay_hero nav .navbar-collapse ul .nav-item:hover {
     background-attachment: fixed;
     position: relative;
 }
-.overlay{
+
+.overlay {
     position: absolute;
-    top:0;
-    left:0;
-    right:0;
+    top: 0;
+    left: 0;
+    right: 0;
     bottom: 0;
     background-color: #3c8edaad;
 }
-.registerContent{
+
+.registerContent {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
     width: 100%;
 }
-.registerContent .leftSide{
+
+.registerContent .leftSide {
     width: 45%;
 }
 
-.registerContent .leftSide .timer{
+.registerContent .leftSide .timer {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     margin-top: 60px;
 }
-.registerContent .leftSide .timer div{
+
+.registerContent .leftSide .timer div {
     width: 110px;
     height: 110px;
     background-color: #007aff;
     padding: 20px;
     display: flex;
     flex-direction: column;
-    
+
 }
-.registerContent .leftSide .timer div p{
+
+.registerContent .leftSide .timer div p {
     width: 110px;
     height: 110px;
     background-color: #007aff;
     padding: 20px;
-    color:#fff;
+    color: #fff;
     font-size: 25px;
 }
-.registerContent .leftSide{
+
+.registerContent .leftSide {
     width: 55%;
 }
-.registerContent .rightSide{
+
+.registerContent .rightSide {
     width: 40%;
 }
-.registerContent .rightSide .form input{
+
+.registerContent .rightSide .form input {
     margin-bottom: 20px;
     outline: none;
     padding: 8px 12px;
-    border:none;
-    border-bottom:3px solid blue;
+    border: none;
+    border-bottom: 3px solid blue;
     border-radius: 7px;
-    color:#ccc;
+    color: #ccc;
 }
-::placeholder{
-    color:#ccc;
+
+::placeholder {
+    color: #ccc;
 }
+
 /* ************************************************* why ***************************************************** */
-.why{
-    margin-top: 100px;
+.why {
+    margin-top: 50px;
     margin-bottom: 100px;
 }
-.why .reviewsDetails .itemReview .mainImageReview{
-    width: 100%;
+.why .reviewsDetails .itemReview{
+    margin-bottom: 40px;
+}
+.why .reviewsDetails .itemReview .mainImageReview {
+    width: 50%;
+   
     border-radius: 10px;
 }
+
 /* ************************************************* footer ***************************************************** */
-footer{
+footer {
     background-color: #b3c1ce;
     width: 100%;
     padding: 15px;
     text-align: center;
 }
-footer p{
+
+footer p {
     margin: 0;
-    
+    margin-top: 10px;
 }
+footer .icons{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+}
+footer .icons div {
+    width: 40px;
+    height: 40px;
+    background-color: #13a0e1;
+}
+
+footer .icons div svg {
+    color: #fff !important;
+    cursor: pointer;
+}
+
+footer .icons div:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+
 /* ************************************************* media query ***************************************************** */
-@media (max-width:1200px){
-    .registerContent .leftSide .timer div p{
+@media (max-width:1200px) {
+    .registerContent .leftSide .timer div p {
         width: 0px;
         height: 0px;
         background-color: none;
         padding: 0px;
-        color:#fff;
+        color: #fff;
         font-size: 25px;
     }
 }
+
 @media(max-width:992px) {
     .fs-5 {
         font-size: 2.3rem !important;
@@ -399,8 +487,9 @@ footer p{
 
     header .overlay_hero nav .navbar-collapse ul {
         background-color: rgba(0, 0, 0, 0.53);
-     
+
     }
+
     .carousel {
         height: 80vh !important;
     }
@@ -437,32 +526,40 @@ footer p{
         margin-bottom: 20px;
     }
 
-    .registerContent{
+    .registerContent {
         justify-content: center;
-        align-items:center;
+        align-items: center;
         flex-direction: column;
         width: 100%;
     }
-    .registerContent .leftSide{
+
+    .registerContent .leftSide {
         width: 100%;
     }
-    
- 
-    .registerContent .leftSide .timer div p{
+
+
+    .registerContent .leftSide .timer div p {
         width: 110px;
         height: 110px;
         background-color: #007aff;
         padding: 20px;
-        color:#fff;
+        color: #fff;
         font-size: 25px;
     }
 
-    .registerContent .rightSide{
+    .registerContent .rightSide {
         width: 100%;
         margin-top: 30px;
     }
 
-
+    .Difference .item{
+        width: 47%;
+    }
+    .Difference .item:nth-child(2){
+        order:3;
+        width: 100%;
+        margin-top: 30px;
+    }
 }
 
 @media(max-width:768px) {
@@ -474,6 +571,7 @@ footer p{
         width: 40%;
 
     }
+
     .carousel {
         height: 60vh !important;
     }
@@ -509,7 +607,8 @@ footer p{
     .pagination li a {
         padding: 10px 15px !important;
     }
-    .register{
+
+    .register {
         height: 80vh;
     }
 
@@ -529,11 +628,38 @@ footer p{
     .carousel {
         height: 50vh !important;
     }
-    .carousel-control-prev,.carousel-control-next{
+
+    .carousel-control-prev,
+    .carousel-control-next {
         z-index: 10;
-        display: none;
+        /* display: none; */
     }
 
+    .carousel .carousel-inner .carouselContent {
+        left: 50%;
+        transform: translateX(-50%);
+        top: 90%;
+        padding: 7px;
+        border-radius: 5px;
+        width: 90%;
+    }
+
+    .carousel .carousel-inner .carouselContent p {
+        margin: 0;
+        color: #fff;
+        font-weight: bold;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+    .Difference .item{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .Difference .item:nth-child(2){
+        order:3;
+        width: 100%;
+       
+    }
     .reviewsDetails {
         justify-content: center;
     }
@@ -542,20 +668,23 @@ footer p{
         width: 85%;
         margin-bottom: 20px auto;
     }
-    .registerContent .leftSide .timer div{
+
+    .registerContent .leftSide .timer div {
         width: 70px;
         height: 70px;
         padding: 10px;
     }
-    .registerContent .leftSide .timer div p{
+
+    .registerContent .leftSide .timer div p {
         width: 0px;
         height: 0px;
         background-color: none;
         padding: 0px;
-        color:#fff;
+        color: #fff;
         font-size: 17px;
     }
-    .register{
+
+    .register {
         height: 100vh;
     }
 }
