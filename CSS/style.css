@@ -646,7 +646,7 @@ footer .icons div:hover {
         top: 90%;
         padding: 7px;
         border-radius: 5px;
-        /* width: 90%; */
+       margin-top: 80px;
     }
     .carousel .carousel-inner .carouselContent button{
         font-size: 12px;
