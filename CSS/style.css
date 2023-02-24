@@ -486,8 +486,8 @@ footer .icons div:hover {
     }
 
     header .overlay_hero nav .navbar-collapse ul {
-        background-color: rgba(0, 0, 0, 0.53);
-
+        background-color: rgba(0, 0, 0, 0.893);
+        padding: 20px;
     }
 
     .carousel {
@@ -660,12 +660,13 @@ footer .icons div:hover {
         width: 100%;
        
     }
+   
     .reviewsDetails {
         justify-content: center;
     }
 
     .reviewsDetails .itemReview {
-        width: 85%;
+        width: 100%;
         margin-bottom: 20px auto;
     }
 
